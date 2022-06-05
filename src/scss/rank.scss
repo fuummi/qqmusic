@@ -1,0 +1,124 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(250, 250, 250);
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+a {
+    font-weight: 100;
+    text-decoration: none;
+}
+
+
+.rank_list {
+    display: block;
+    height: 1000px;
+    margin: 25.3333vw 4.2667vw 3.2vw 4.2667vw;
+    padding-top: 5.6667vw;
+    position: relative;
+
+    @for $i from 2 through 10 {
+        li:nth-child(#{$i}) {
+            transform: translateY((($i*30.6667)-30.6667vw));
+        }
+    }
+
+    li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        display: block;
+        width: 88.2667vw;
+        height: 28.5333vw;
+        border-radius: 2.13vw;
+        background-color: #fff;
+        padding-left: 3.2vw;
+        transition: all 0.5s;
+
+        .p {
+            display: inline-block;
+            margin: 2.7vw 3.2vw 1.0667vw 0;
+            font-size: 4.2vw;
+            font-weight: 700;
+            color: black;
+        }
+
+        .items {
+            position: absolute;
+
+            .item {
+                margin-bottom: 1vw;
+                vertical-align:middle;
+                .rank {
+                    color: rgba(26, 26, 26, 1);
+                    font-size: 3.1vw;
+                    font-weight: 900;
+                }
+
+                .title {
+                    display: inline-block;
+                    color: rgba(26, 26, 26, 1);
+                    font-size: 3.1vw;
+                    font-weight: 200;
+                }
+
+                .singer {
+                    display: inline-block;
+                    color: rgba(26, 26, 26, .5);
+                    font-size: 2.9vw;
+                    font-weight: 200;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+
+        .update {
+            font-size: 2.9vw;
+            position: absolute;
+            z-index: 10;
+            top: 1.8vw;
+            right: 1.6vw;
+            color: #fff;
+        }
+
+        img {
+            position: absolute;
+            right: 0;
+            width: 28.5333vw;
+            height: 28.5333vw;
+            border-radius: 0 2.13vw 2.13vw 0;
+        }
+
+        .num {
+            font-size: 1.5vw;
+            position: absolute;
+            bottom: 0;
+            right: .4vw;
+            text-align: center;
+            padding: 0 1.0333vw 0 1.7667vw;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.452);
+            border-radius: 1.3333vw;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMANKf2EQjsz8aUemg9LSMb29qrT07ELBLNAAAAUklEQVQY053QSQ6AIBBE0bYBxQFwqvtf1bgimkoY/vJtepCmLq/hb9YAmO0XB7yNK0Fg2ggCmgjCLC5jbo8EobV4xKpBmsjypTMde4jc/gzS1wMkNgsYmjY08wAAAABJRU5ErkJggg==);
+            background-repeat: no-repeat;
+            background-size: 1.3333vw;
+            background-position: .4vw .4667vw;
+        }
+
+    }
+}
+
+.bottom {
+    padding-bottom: 25vw;
+    transform: translateY((130vw));
+}

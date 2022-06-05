@@ -1,0 +1,5 @@
+import '../scss/common.scss'
+import '../scss/mainPage.scss'
+import '../scss/rank.scss'
+import '../scss/search.scss'
+import '../js/route.js'
