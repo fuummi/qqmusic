@@ -93,7 +93,7 @@ export default function () {
             setTimeout(()=>{
                 searchList.style.display = "block";
             },300)
-            
+            return
         }else{
             location.hash = `#/search/${search.value}`;
         }
