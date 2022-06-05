@@ -92,7 +92,7 @@ export default function () {
             //欺骗用户的定时器呀，假装我又搜了一遍
             setTimeout(()=>{
                 searchList.style.display = "block";
-            },300)
+            },200)
             return
         }else{
             location.hash = `#/search/${search.value}`;
